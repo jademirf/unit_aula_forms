@@ -38,6 +38,26 @@
       <header>
         <h2>Form Cadastro</h2>
       </header>
+      <form action="#" method="get">
+        <input type="hidden" name="matriculaUsuario" value="123456">
+        <input type="text" name="fullName" placeholder="Informe o nome completo" required>
+        <input type="email" placeholder="login@email.com" name="email" required>
+        <input type="number" placeholder="apenas números" name="phoneNumber">
+        <div>
+          <p>Iforme o sexo?</p>
+          <input type="radio" name="opSexual" id="nao" value="n"><label for="nao">Não informado</label>
+          <input type="radio" name="opSexual" id="mas" value="m"><label for="mas">Masculino</label>
+          <input type="radio" name="opSexual" id="fem" value="f"><label for="fem">Feminino</label>
+        </div>
+        <div>
+          <p>Alergias</p>
+          <input type="checkbox" name="opAlergias" id="maracuja" value="maracuja"><label for="maracuja">maracuja</label>
+          <input type="checkbox" name="opAlergias" id="camarao" value="camarao"><label for="camarao">camarao</label>
+          <input type="checkbox" name="opAlergias" id="poeira" value="poeira"><label for="poeira">poeira</label>
+        </div>
+        <input type="submit" value="enviar">
+        <input type="reset" value="cancelar">
+      </form>
     </section>
   </main>
 </body>
